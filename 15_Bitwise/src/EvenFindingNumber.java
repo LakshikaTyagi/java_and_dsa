@@ -1,4 +1,4 @@
-public class FindingNumber {
+public class EvenFindingNumber {
     static void main() {
 //        we are given an array in which every number appears twice except one number , we have to find that one number
 
