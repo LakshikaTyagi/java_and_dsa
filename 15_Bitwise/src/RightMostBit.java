@@ -5,6 +5,11 @@ public class RightMostBit {
         System.out.println(position(288));
         System.out.println(position(529));
         System.out.println(position(512));
+
+        System.out.println(rightMostBit(10));
+        System.out.println(rightMostBit(288));
+        System.out.println(rightMostBit(259));
+        System.out.println(rightMostBit(512));
     }
 
     static  double log2(int x){
