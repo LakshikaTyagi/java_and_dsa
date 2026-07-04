@@ -20,4 +20,8 @@ public class RightMostBit {
         }
         return -1;
     }
+
+    static int rightMostBit(int n){
+        return n & (-n);
+    }
 }
