@@ -2,6 +2,7 @@ public class PrimeNumbers {
     static void main() {
         System.out.println(checkPrime(13));
         System.out.println(checkPrime(93));
+        System.out.println(checkPrime(73));
 
     }
 
