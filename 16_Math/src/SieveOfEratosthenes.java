@@ -14,7 +14,7 @@ public class SieveOfEratosthenes {
     }
 
 //    space complexity : O(n)
-//    time complexity :
+//    time complexity : O( n * log(log(n)) )
     static void sieve(int b ,boolean [] arr){
         int c = 2;
         while(c*c <= b){
