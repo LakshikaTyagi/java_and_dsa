@@ -1,3 +1,5 @@
+package Intro;
+
 public class NumbersExample {
     static void main() {
 //        write a function that takes a number and print numbers upto it
