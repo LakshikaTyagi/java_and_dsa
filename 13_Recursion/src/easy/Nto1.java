@@ -10,7 +10,7 @@ public class Nto1 {
 
         print_num_both(5);
         System.out.println();
-
+        
     }
 
     static void print_num_desc(int n){
