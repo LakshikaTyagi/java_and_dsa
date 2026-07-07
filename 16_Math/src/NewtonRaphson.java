@@ -1,13 +1,16 @@
+import static java.lang.Double.NaN;
+
 public class NewtonRaphson {
     static void main() {
 
-        System.out.printf("%.5f\n",sqrt(4));
+        System.out.printf("%.5f\n",sqrt(0));
         System.out.printf("%.5f\n",sqrt(40));
         System.out.printf("%.5f\n",sqrt(400));
 
     }
 
     static double sqrt(int n){
+        if(n < 1)return NaN;
         double x = n-1;
         double root = 1;
         double error = Math.abs(root - x);
@@ -17,7 +20,6 @@ public class NewtonRaphson {
             error = root - x;
             error = error < 0 ? -1*error : error;
             x = root;
-//            x = 9;
         }
         return root;
     }
