@@ -5,8 +5,8 @@ public class Reverse {
     static int rev = 0;
 
     static void main() {
-        System.out.println(reverse(123,0));
-        System.out.println(reverse(1004,0));
+        System.out.println(reverse(123));
+        System.out.println(reverse(1004));
 
         System.out.println(reverse2(342));
         System.out.println(reverse2(3956));
@@ -15,10 +15,15 @@ public class Reverse {
         System.out.println(reverse3(8974));
     }
 
-    static int reverse(int n,int r){
-        if(n == 0)return r;
-        int m = n%10 + r*10;
-        return reverse(n/10,m);
+//    sometimes you need additional variables in the argument , in that case make another function
+    static int reverse(int n){
+        int digits = (int) Math.log10(n) + 1;
+        return helper(n,digits);
+    }
+
+    private static int helper(int n, int digits) {
+        if(n < 10)return n;
+        return (n%10) * Math.powExact(10,digits-1) + helper(n/10,digits-1);
     }
 
     static int reverse2(int n){
