@@ -3,8 +3,8 @@ package Pattern;
 public class Triangle {
 
     static void main() {
-        triangle1(4);
-        triangle2(4,0);
+        triangle1(5);
+        triangle2(5,0);
     }
 
     static void triangle1(int n) {
