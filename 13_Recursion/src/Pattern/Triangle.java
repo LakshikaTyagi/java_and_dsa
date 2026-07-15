@@ -1,4 +1,4 @@
-package Pattern_Sorting;
+package Pattern;
 
 public class Triangle {
 
