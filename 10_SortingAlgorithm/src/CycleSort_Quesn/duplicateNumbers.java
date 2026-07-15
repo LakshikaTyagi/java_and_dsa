@@ -1,5 +1,6 @@
+package CycleSort_Quesn;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class duplicateNumbers {
     static void main() {

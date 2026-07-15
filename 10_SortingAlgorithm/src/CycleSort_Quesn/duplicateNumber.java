@@ -1,3 +1,5 @@
+package CycleSort_Quesn;
+
 public class duplicateNumber {
     static void main() {
 
