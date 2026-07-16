@@ -1,10 +1,15 @@
+package Sorting;
+
 import java.util.Arrays;
 
-public class MergeSort_recursion {
+public class MergeSort {
     static void main() {
 
-        int[] arr = {8,3,4,12,5,6};
-        System.out.println(Arrays.toString(mergeSort(arr)));
+        int[] arr = {4,3,2,1};
+        int[] ans = mergeSort(arr);
+
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(ans));
     }
 
     static int[] mergeSort(int [] arr){
