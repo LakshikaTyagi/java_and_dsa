@@ -5,8 +5,11 @@ import java.util.Arrays;
 public class MergeSort {
     static void main() {
 
-        int[] arr = {8,3,4,12,10,34,234,45,3,234,342,2,23,4333,2,3};
-        System.out.println(Arrays.toString(mergeSort(arr)));
+        int[] arr = {4,3,2,1};
+        int[] ans = mergeSort(arr);
+
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(ans));
     }
 
     static int[] mergeSort(int [] arr){
