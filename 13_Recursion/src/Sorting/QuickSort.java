@@ -8,6 +8,11 @@ public class QuickSort {
         int [] arr = {6,5,4,3,2,1};
         quicksort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
+
+        int [] arr2 = {2,5,4,2,1};
+        Arrays.sort(arr2);
+        System.out.println(Arrays.toString(arr2));
+
     }
 
     static void quicksort(int [] arr, int low , int high){
