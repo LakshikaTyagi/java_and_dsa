@@ -6,13 +6,15 @@ public class Permutations {
     static void main() {
 
         permutation("","abc");
+        System.out.println();
 
         System.out.println(permutationRet("","abc"));
+        System.out.println(permutationCount("","abc"));
     }
 
     static void permutation(String p, String up) {
         if(up.isEmpty()){
-            System.out.println(p);
+            System.out.print(p + " ");
             return;
         }
         for (int i = 0; i <= p.length(); i++){
@@ -40,5 +42,19 @@ public class Permutations {
         }
 
         return list;
+    }
+
+    static int permutationCount(String p, String up) {
+        if(up.isEmpty()){
+            return 1;
+        }
+        int count = 0;
+        for (int i = 0; i <= p.length(); i++){
+            String f = p.substring(0,i);
+            String s = p.substring(i);
+            char ch = up.charAt(0);
+            count += permutationCount(f+ch+s, up.substring(1));
+        }
+        return count;
     }
 }
