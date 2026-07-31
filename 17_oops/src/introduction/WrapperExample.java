@@ -19,10 +19,11 @@ public class WrapperExample {
         kunal.name = "other name";
 //        kunal = new A("new object"); //when a non primitive is final , you cannot to resign it
 
-        A obj;
+        A obj = new A("Random");
         for (int i = 0; i < 35000; i++) {
-            obj = new A("Random name");
+            obj = new A("Random name");  //to print a statement when garbage collector collects the previous references
         }
+        System.out.println(obj);
 
     }
 
