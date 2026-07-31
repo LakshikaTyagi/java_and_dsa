@@ -5,6 +5,7 @@ public class WrapperExample {
         int a = 10, b = 20;
 
         Integer num = 45, num1 = 89;  //wrapper class of int
+        num = 78;
 
         swap(a, b); //does not swap at all since int is primitive data type
         swap(num, num1);
@@ -19,7 +20,7 @@ public class WrapperExample {
 //        kunal = new A("new object"); //when a non primitive is final , you cannot to resign it
 
         A obj;
-        for (int i = 0; i < 32000; i++) {
+        for (int i = 0; i < 35000; i++) {
             obj = new A("Random name");
         }
 
