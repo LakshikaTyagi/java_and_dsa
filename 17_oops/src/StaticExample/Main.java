@@ -11,7 +11,10 @@ public class Main {
         Human h1 = new Human(29, "abc", 87312, true);
 
         System.out.println(h.name);
+
+//        it is generally a good practice to access static variables through class names not object names
         System.out.println(Human.population);
+
         System.out.println(h1.population);
 
     }
