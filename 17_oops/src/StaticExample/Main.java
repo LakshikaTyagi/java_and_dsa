@@ -14,8 +14,8 @@ public class Main {
         System.out.println(Human.population);
         System.out.println(h1.population);
 
-//        Main funn = new Main();
-//        funn.fun2();
+        Main funn = new Main();
+        funn.fun2();
 
     }
 
