@@ -6,6 +6,12 @@ class Test {
     public Test(String name) {
         Test.name = name;
     }
+
+    @Override
+    public String toString() {
+//        return "Test{" + "name='" + name + '\'' + '}';
+        return name;
+    }
 }
 
 public class InnerClasses {
@@ -22,6 +28,7 @@ public class InnerClasses {
         Test a = new Test("Ram");
         Test b = new Test("Ramesh");
 
+        System.out.println(a);
 
         System.out.println(a.name);
     }
