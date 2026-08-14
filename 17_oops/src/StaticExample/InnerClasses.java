@@ -9,13 +9,13 @@ class Test {
 
     @Override
     public String toString() {
-//        return "Test{" + "name='" + name + '\'' + '}';
+//      return "Test{" + "name='" + name + '\'' + '}';
         return name;
     }
 }
 
 public class InnerClasses {
-//    static class Test {
+//    static class Test {         //this should be static as it is inner class, inner classes cannot be non - static
 //        String name;
 //
 //        public Test(String name) {
@@ -34,6 +34,6 @@ public class InnerClasses {
     }
 }
 
-//static class A {
+//static class A {  //error outer classes should be non - static
 //    ...
 //}
