@@ -18,5 +18,20 @@ public class Box {
         this.l = side;
     }
 
-//    13.40
+    Box(double l, double h, double w) {
+        this.l = l;
+        this.h = h;
+        this.w = w;
+    }
+
+    Box(Box old) {
+        this.h = old.h;
+        this.l = old.l;
+        this.w = old.w;
+    }
+
+    public void Information() {
+        System.out.println("running the box");
+    }
+
 }
