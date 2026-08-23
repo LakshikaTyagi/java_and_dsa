@@ -1,9 +1,10 @@
 package properties.inheritance;
 
 public class Box {
-    double l;
+    private double l;  //can be used only in this file
     double w;
     double h;
+    double weight;
 
     Box() {
         this.h = -1;
@@ -13,12 +14,12 @@ public class Box {
 
     //    cube
     Box(double side) {
-        this.w = side;
-        this.h = side;
-        this.l = side;
+//        super();  object class
+        this.w = this.l = this.h = side;
     }
 
     Box(double l, double h, double w) {
+        System.out.println("box class constructor");
         this.l = l;
         this.h = h;
         this.w = w;
