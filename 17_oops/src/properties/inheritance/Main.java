@@ -26,6 +26,10 @@ public class Main {
         BoxWeight box6 = new BoxWeight(box4);
         System.out.println(box6.w);
 
+        BoxPrice box7 = new BoxPrice(5, 8, 200);
+
+        BoxColor box8 = new BoxColor();
+        System.out.println(box8.color);
+
     }
 }
-//48.13
