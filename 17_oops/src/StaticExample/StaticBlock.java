@@ -6,6 +6,7 @@ public class StaticBlock {
     static int b;
 
     //    it will run only once when the first obj is created i.e., when the class is loaded for the first time
+//    this is static block (initializer) , not static method
     static {
         System.out.println("I am in static block");
         b = a * 5;
