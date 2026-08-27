@@ -4,7 +4,15 @@ public class Box {
     private double l;  //can be used only in this file
     double w;
     double h;
-    double weight;
+//    double weight;
+
+    static void greeting() {
+        System.out.println("Hey! I am in box class.");
+    }
+
+    public double getL() {
+        return l;
+    }
 
     Box() {
         this.h = -1;
@@ -19,7 +27,7 @@ public class Box {
     }
 
     Box(double l, double h, double w) {
-        System.out.println("box class constructor");
+//        System.out.println("box class constructor");
         this.l = l;
         this.h = h;
         this.w = w;

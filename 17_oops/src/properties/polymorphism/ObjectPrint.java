@@ -20,4 +20,3 @@ public class ObjectPrint {
         System.out.println(obj);
     }
 }
-//1.45.17
