@@ -1,5 +1,7 @@
 package singleton;
 
+import access.A;
+
 public class Main {
     static void main() {
         Singleton obj = Singleton.getInstance();
