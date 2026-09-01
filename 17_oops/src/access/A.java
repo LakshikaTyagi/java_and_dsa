@@ -4,6 +4,7 @@ public class A {
     int num;
     public String name;
     protected int[] arr;
+    protected int m = 7;
 
     public int getNum() {
         return num;

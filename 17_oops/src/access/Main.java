@@ -1,6 +1,7 @@
 package access;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     static void main() {
@@ -16,5 +17,7 @@ public class Main {
 
         obj.num = 3;
         int m = obj.num; //default access modifier is accessed here , but cannot be accessed from outside package
+        System.out.println(Arrays.toString(obj.arr));
+
     }
 }
